@@ -1,6 +1,11 @@
-# AstroNvim User Configuration Example
+# My AstroNvim User Configuration Example
 
 A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+
+## Next plans
+
+- [ ] Fill ensure installed column in config for mason
+- [ ] Install some git diff tool (plugin)
 
 ## 🛠️ Installation
 
