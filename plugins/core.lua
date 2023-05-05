@@ -1,3 +1,5 @@
+local notify = require("astronvim.utils").notify
+
 return {
   -- customize alpha options
   {
@@ -35,12 +37,13 @@ return {
     -- end,
     opts = function(_, opts)
       opts.window.width = 50
-      -- opts.filesystem.filtered_items.hide_dotfiles = false
-      -- opts.filesystem = {
-      --   filtered_items = {
-      --     hide_dotfiles = false
-      --   }
-      -- }
+      opts.filesystem.filtered_items = {
+        hide_dotfiles = false,
+        hide_by_name = {
+          ".git",
+          "node_modules"
+        }
+      }
     end
   },
   -- {
