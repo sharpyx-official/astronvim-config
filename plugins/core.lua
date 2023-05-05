@@ -41,9 +41,12 @@ return {
         hide_dotfiles = false,
         hide_by_name = {
           ".git",
+          ".idea",
+          ".run",
           "node_modules"
         }
       }
+      opts.filesystem.group_empty_dirs = true
     end
   },
   -- {
