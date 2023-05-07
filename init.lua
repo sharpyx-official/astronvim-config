@@ -18,13 +18,21 @@ return {
   },
   -- Set colorscheme to use
   -- colorscheme = "catppuccin",
-  colorscheme = "nightfox", -- Rate 1
+  -- colorscheme = "nightfox", -- Rate 1
   -- colorscheme = "kanagawa", -- Rate 2
   -- colorscheme = "everforest", -- Rate 3
   -- colorscheme = "gruvbox", --Rate 1
   -- colorscheme = "onigiri", -- Rate 1
   -- colorscheme = "oxocarbon", -- Rate 2
   -- colorscheme = "tokyonight", -- Rate 2
+  -- new
+  -- colorscheme = "dracula", -- Rate 1
+  -- colorscheme = "iceberg", -- Rate 2
+  -- colorscheme = "monokai-pro", -- Rate 1 -- configurable
+  -- colorscheme = "nord-nvim", -- Rate 4 --configurable
+  -- colorscheme = "poimandres", -- Rate 2
+  -- colorscheme = "rose-pine", -- Rate 2
+  colorscheme = "gruvbox-baby", -- Rate 2
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {

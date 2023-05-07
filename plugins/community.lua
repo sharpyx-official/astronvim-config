@@ -12,5 +12,12 @@ return {
   { import = "astrocommunity.colorscheme.onigiri" },
   { import = "astrocommunity.colorscheme.oxocarbon" },
   { import = "astrocommunity.colorscheme.tokyonight" },
+  { import = "astrocommunity.colorscheme.gruvbox-baby" },
+  { import = "astrocommunity.colorscheme.dracula" },
+  { import = "astrocommunity.colorscheme.iceberg" },
+  { import = "astrocommunity.colorscheme.monokai-pro" },
+  { import = "astrocommunity.colorscheme.nord-nvim" },
+  { import = "astrocommunity.colorscheme.poimandres" },
+  { import = "astrocommunity.colorscheme.rose-pine" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }

@@ -46,9 +46,25 @@ return {
           "node_modules"
         }
       }
-      opts.filesystem.group_empty_dirs = true
+      -- opts.filesystem.group_empty_dirs = true
+      -- notify("Some message", 3)
     end
   },
+  -- {
+  --   "NvChad/nvim-colorizer.lua",
+  --   otps = {
+  --     user_default_options = {
+  --       names = true,
+  --       tailwind = true
+  --     }
+  --   }
+  -- }
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --   opts = function(_, opts)
+  --     notify("Some message", 3)
+  --   end
+  -- },
   -- {
   --   "windwp/nvim-autopairs",
   --   config = function(plugin, opts)
