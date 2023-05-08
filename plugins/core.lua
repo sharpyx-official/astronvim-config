@@ -50,15 +50,15 @@ return {
       -- notify("Some message", 3)
     end
   },
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   otps = {
-  --     user_default_options = {
-  --       names = true,
-  --       tailwind = true
-  --     }
-  --   }
-  -- }
+  {
+    "NvChad/nvim-colorizer.lua",
+    otps = {
+      user_default_options = {
+        names = true,
+        tailwind = true
+      }
+    }
+  }
   -- {
   --   "hrsh7th/nvim-cmp",
   --   opts = function(_, opts)

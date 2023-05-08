@@ -25,7 +25,19 @@ end
 
 return {
   "hrsh7th/nvim-cmp",
+  dependencies = {
+    { "roobert/tailwindcss-colorizer-cmp.nvim", config = true },
+  },
   opts = function(_, opts)
+    -- Setting up the colorizer for tailwind
+    local format_kinds = opts.formatting.format
+
+    opts.formatting.format = function(entry, item)
+      format_kinds(entry, item)
+      return require("tailwindcss-colorizer-cmp").formatter(entry, item)
+    end
+
+    -- Adding comparator for cmp (snippets - last)
     local cmp = require('cmp').config.compare
     cmp.lspkind_comparator = lspkind_comparator({
       kind_priority = {
