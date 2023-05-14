@@ -1,3 +1,5 @@
+require("user.curl_autocmd")
+
 return {
   -- Configure AstroNvim updates
   updater = {
