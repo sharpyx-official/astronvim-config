@@ -38,19 +38,19 @@ return {
     end
 
     -- Adding comparator for cmp (snippets - last)
-    local cmp = require('cmp').config.compare
-    cmp.lspkind_comparator = lspkind_comparator({
-      kind_priority = {
-        Snippet = 0
-      }
-    })
-
-    opts.sorting = {
-      comparators = {
-        lspkind_comparator = lspkind_comparator({
-          Snippet = 0
-        })
-      }
-    }
+    -- local cmp = require('cmp').config.compare
+    -- cmp.lspkind_comparator = lspkind_comparator({
+    --   kind_priority = {
+    --     Snippet = 0
+    --   }
+    -- })
+    --
+    -- opts.sorting = {
+    --   comparators = {
+    --     lspkind_comparator = lspkind_comparator({
+    --       Snippet = 0
+    --     })
+    --   }
+    -- }
   end
 }
