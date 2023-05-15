@@ -1,3 +1,4 @@
+---@diagnostic disable: unused-local, unused-function
 local notify = require("astronvim.utils").notify
 
 -- Function that mark snippets as low priority kind

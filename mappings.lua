@@ -11,7 +11,10 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr)
+          require("astronvim.utils.buffer").close(
+            bufnr)
+        end)
       end,
       desc = "Pick to close",
     },
@@ -20,8 +23,20 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     ["<C-d>"] = { "<C-d>zz" },
     ["<C-u>"] = { "<C-u>zz" },
-    -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- resize with arrows
+    ["<Up>"] = { function() require("smart-splits").resize_up(2) end, desc = "Resize split up" },
+    ["<Down>"] = { function() require("smart-splits").resize_down(2) end, desc = "Resize split down" },
+    ["<Left>"] = { function() require("smart-splits").resize_left(2) end, desc = "Resize split left" },
+    ["<Right>"] = { function() require("smart-splits").resize_right(2) end, desc = "Resize split right" },
+    -- Zen Mode
+    ["<leader>z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
+    -- neogen
+    ["<leader>a"] = { desc = "󰏫 Annotate" },
+    ["<leader>a<cr>"] = { function() require("neogen").generate({}) end, desc = "Current" },
+    ["<leader>ac"] = { function() require("neogen").generate { type = "class" } end, desc = "Class" },
+    ["<leader>af"] = { function() require("neogen").generate { type = "func" } end, desc = "Function" },
+    ["<leader>at"] = { function() require("neogen").generate { type = "type" } end, desc = "Type" },
+    ["<leader>aF"] = { function() require("neogen").generate { type = "file" } end, desc = "File" },
   },
   t = {
     -- setting a mapping to false will disable it
