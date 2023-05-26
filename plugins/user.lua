@@ -54,5 +54,9 @@ return {
         typescriptreact = { template = { annotation_convention = "tsdoc" } },
       },
     },
+  },
+  {
+    "cdelledonne/vim-cmake",
+    lazy = false
   }
 }
