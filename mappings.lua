@@ -37,6 +37,7 @@ return {
     ["<leader>af"] = { function() require("neogen").generate { type = "func" } end, desc = "Function" },
     ["<leader>at"] = { function() require("neogen").generate { type = "type" } end, desc = "Type" },
     ["<leader>aF"] = { function() require("neogen").generate { type = "file" } end, desc = "File" },
+    ["<leader>r"] = { ":! python % <cr>" }
   },
   t = {
     -- setting a mapping to false will disable it
