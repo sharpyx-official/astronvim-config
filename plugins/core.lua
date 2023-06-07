@@ -44,6 +44,9 @@ return {
           ".idea",
           ".run",
           "node_modules"
+        },
+        always_show = {
+          ".dev"
         }
       }
       -- opts.filesystem.group_empty_dirs = true
