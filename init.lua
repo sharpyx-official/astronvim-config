@@ -35,6 +35,7 @@ return {
   -- colorscheme = "poimandres", -- Rate 2
   -- colorscheme = "rose-pine", -- Rate 2
   colorscheme = "gruvbox-baby", -- Rate 2
+  -- colorscheme = "catppuccin-latte", -- Rate 2
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
