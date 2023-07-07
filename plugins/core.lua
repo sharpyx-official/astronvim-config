@@ -26,33 +26,33 @@ return {
   -- { "max397574/better-escape.nvim", enabled = false },
   --
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    -- config = function(plugin, opts)
-    -- require "plugins.configs.neo-tree"(plugin, opts) -- include the default astronvim config that calls the setup call
-    -- add more custom luasnip configuration such as filetype extend or custom snippets
-    -- local luasnip = require "luasnip"
-    -- luasnip.filetype_extend("javascript", { "javascriptreact" })
-    -- opts.window.size = 50
-    -- end,
-    opts = function(_, opts)
-      opts.window.width = 50
-      opts.filesystem.filtered_items = {
-        hide_dotfiles = false,
-        hide_by_name = {
-          ".git",
-          ".idea",
-          ".run",
-          "node_modules"
-        },
-        always_show = {
-          ".dev"
-        }
-      }
-      -- opts.filesystem.group_empty_dirs = true
-      -- notify("Some message", 3)
-    end
-  },
+  -- {
+  --   "nvim-neo-tree/neo-tree.nvim",
+  --   -- config = function(plugin, opts)
+  --   -- require "plugins.configs.neo-tree"(plugin, opts) -- include the default astronvim config that calls the setup call
+  --   -- add more custom luasnip configuration such as filetype extend or custom snippets
+  --   -- local luasnip = require "luasnip"
+  --   -- luasnip.filetype_extend("javascript", { "javascriptreact" })
+  --   -- opts.window.size = 50
+  --   -- end,
+  --   opts = function(_, opts)
+  --     opts.window.width = 50
+  --     opts.filesystem.filtered_items = {
+  --       hide_dotfiles = false,
+  --       hide_by_name = {
+  --         ".git",
+  --         ".idea",
+  --         ".run",
+  --         "node_modules"
+  --       },
+  --       always_show = {
+  --         ".dev"
+  --       }
+  --     }
+  --     -- opts.filesystem.group_empty_dirs = true
+  --     -- notify("Some message", 3)
+  --   end
+  -- },
   {
     "NvChad/nvim-colorizer.lua",
     otps = {

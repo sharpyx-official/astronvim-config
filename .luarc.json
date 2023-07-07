@@ -1,0 +1,6 @@
+{
+    "diagnostics.globals": [
+        "config_icons",
+        "check_is_kotlin_module"
+    ]
+}
